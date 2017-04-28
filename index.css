@@ -1,0 +1,84 @@
+/*
+MustardPlus: don't steal pls
+3/27/17
+*/
+
+body {
+	font-size: 16px;
+	background-color: #FFF;
+}
+
+.wrapper {
+	margin: 8px;
+	padding: 8px;
+	border: solid 2px #000;
+}
+
+canvas {
+	width: 100%;
+	height: 100%;
+	display:block;
+	margin: 10px auto 20px;
+	border: 1px solid #333;
+	box-shadow: 0 0 16px 2px rgba(0,0,0,0.8);
+}
+
+/* [ - - General Custom Classes - - ] */
+
+.area {
+	margin: 4px;
+	padding: 6px;
+	border: solid 2px #c1c1c1;
+	overflow: hidden;
+	background: #212121;
+}
+
+.item {
+	float: left;
+	display: inline-block;
+	padding: 4px;
+}
+
+.centext {
+	text-align: center;
+}
+
+.divider {
+	color: #FFF;
+	margin: 20px;
+}
+
+.cup {
+	position: relative;
+	z-index: 0;
+	width: 80px;
+	filter: brightness(100%) hue-rotate(0deg);
+	transform: scale(1.0);
+	transition: filter 0.2s, transform 0.2s;
+}
+
+.cup:hover {
+	z-index: 100;
+	filter: brightness(86%) hue-rotate(90deg);
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+
+button {
+	border: solid 4px #c1c1c1;
+	background: #FFF;
+	font-size: 24px;
+	color: #000;
+	transition: color 0.2s, background 0.2s, transform 0.2s;
+	border-radius: 8px;
+	transform: scale(1.0);
+}
+
+button:hover {
+	cursor: pointer;
+	color: #c1c1c1;
+	transform: scale(0.8);
+	background: #212121;
+	color: yellow;
+}
